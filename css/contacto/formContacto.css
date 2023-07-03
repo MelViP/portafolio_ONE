@@ -1,0 +1,31 @@
+.formcontato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formcontato{
+    background: var(--fondo-celeste);
+    padding: 1rem;
+}
+.formcontato__contacto{
+    display: flex;
+    padding: 1rem;
+    gap: 1.735rem;
+}
+.formcontato--esquerda{
+    display: flex;
+    align-items: center;
+}
+.formcontato__img{
+    display: none; /*ocultar modo mobile*/
+}
+/*desktop mostrar imagen*/
+@media screen and (min-width:1064px) {
+    .formcontato__img{
+        display: flex;
+        justify-content: center;
+    }
+    .formcontato__form{
+        gap:1rem;
+    }
+}

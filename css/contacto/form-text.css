@@ -1,0 +1,22 @@
+.formcontato__text{
+    gap: .5rem;
+    margin: 1rem 0;
+}
+
+.formcontato__title{
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.formcontato__subtext{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--highlight-font);
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:1064px){
+    .formcontato__title{
+        font-size: 2rem;
+    }
+}

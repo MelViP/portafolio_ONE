@@ -1,0 +1,40 @@
+.experience__box{
+    padding: 1rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.experience__img{
+    width: calc(100vw - 18vw);
+    display: flex;
+}
+.experience__info{
+    margin: 1rem 0;
+}
+.experience__title{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: .5rem 0;
+}
+.experience__text{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+/*desktop*/
+@media screen and (min-width:1064px){
+    .experience__box{
+        flex-direction: row;
+        gap: 1.735rem;
+        align-items: center;
+    }
+    .reverse{
+        flex-direction: row-reverse;
+    }
+    .experience__img{
+        width: 47rem;
+    }
+    .experience__title{font-size: 1.375rem;}
+    .experience__text{font-size: 1rem;}
+}

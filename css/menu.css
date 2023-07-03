@@ -1,0 +1,124 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--fondo-gris);
+    padding-top: 2rem;
+}
+
+.menu__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu__header-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .3rem;
+}
+
+.menu__title {
+    color: #464646;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.menu__menu{
+    display: flex;
+    align-items: center;
+}
+.menu__list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu__list__item{
+    margin-right: 1rem;
+}
+.menu__list__item-link{
+    font-size: 1rem;
+}
+
+.menu__list__item__contato_link,
+.menu__list__item-link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.menu__list__item__contato {
+    list-style: none;
+}
+
+.menu__list__item__contato-link,
+.menu__title {
+    background-image: linear-gradient(to right,
+            var(--btn-repo),
+            var(--btn-repo) 50%,
+            #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu__list__item__contato-link:before,
+.menu__title::before {
+    content: '';
+    background: var(--azul-boton)
+        /*#e25098*/
+    ;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu__list__item__contato-link:hover,
+.menu__title:hover {
+    background-position: 0;
+}
+
+.menu__list__item__contato-link:hover::before,
+.menu__title:hover::before {
+    width: 100%;
+}
+
+/*mobile*/
+@media screen and (min-width:0px) {
+    .menu__header{padding: 1rem;}
+    .menu__list{
+        display: none;
+    }
+    .menu__list__item__contato-link{
+        font-size: .875rem;
+        margin-right: 1rem;
+    }
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+    .menu__header{padding: 0;}
+    .menu__list{display: none;}
+    .menu__list__item__contato-link {
+        font-weight: 700;
+    }
+}
+
+/*desktop*/
+@media screen and (min-width:1064px) {
+    .menu__header{padding: 0;}
+    .menu__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

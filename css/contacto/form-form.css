@@ -1,0 +1,58 @@
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+}
+.formcontato__input{
+    height: 3.5rem;
+
+    border: none;
+    border-bottom: transparent 2px inset;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+
+    padding: 0.5rem 0rem 0rem 0rem;
+}
+.formcontato__textarea{
+    border: none;
+    border-bottom: transparent 2px inset;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    resize: none; /*hace que no cambie tamanho*/
+}
+
+.formcontato__input:hover,
+.formcontato__textarea:hover{
+    border-bottom: 2px inset var(--azul-boton);
+}
+
+.formcontato__input::placeholder,
+.formcontato__textarea::placeholder{
+    color: #A2A2A2;
+    font-size: 1rem;
+    font-family: Raleway;
+    line-height: 1rem;
+    padding: .5rem 0;
+    text-align: left;
+    padding-left: 5px;
+}
+.formcontato__botao{
+    border: none;
+    color: var(--cor-de-fundo);
+    background-color: var(--azul-boton);
+    text-align: center;
+    padding: 0.75rem 1rem;
+
+    font-weight: 600;
+    font-size: 1rem;
+
+    width: calc(100% - 50%);
+    transition: all 0.25s;
+}
+
+.formcontato__botao:hover,
+.formcontato__botao:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--highlight-font);
+    transform: translateY(-0.25em);
+    
+}

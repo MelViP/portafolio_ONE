@@ -1,0 +1,22 @@
+.experience{
+    padding: 2rem;
+    background-color: var(--fondo-gris);
+    display: flex;
+    flex-direction: column;
+}
+.experience__section__title{
+    align-self: center;
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/*desktop*/
+@media screen and (min-width:1064px) {
+    .experience{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .experience__section__title{
+        font-size: 2rem;}
+}
