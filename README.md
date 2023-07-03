@@ -1,5 +1,5 @@
 # Challenge ONE | Front End -  Portafolio
-### Analisando el repositorio!
+### Analizando el repositorio!
 ---
 ### Recursos utilizados
 #### 🔹https://cssreference.io/
